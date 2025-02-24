@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 2: Write a program to check if a number is prime.
+
+        //    1. number should be positive.
+        //    2. number > 2 and ignore 2
+        //    3. number % 2 that is not Prime.
+        //    4. number should not have any factor.
+        let number = 13;
+        if (number < 2) {
+            console.log("number is not a prime");
+        } else if (number == 2) {
+            console.log("number is prime");
+        } else {// (number > 2)
+            let factorFound = false;
+            for (let i = 2; number > i; i++) {
+                if (number % i == 0) {
+                    // Factor found
+                    factorFound = true;
+                }
+            }
+            if (!factorFound) {
+                console.log("number is prime");
+            } else {
+                console.log("number is not prime");
+            }
+        }
+
+    </script>`
+</body>
+
+</html>
